@@ -12,30 +12,37 @@ body {
 
 h1 {
     color: #302D2C;
-    font-size: 22px;
+    font-size: 40px;
 }
 h1, h2 {
     font-family: "Young Serif", serif;
+    font-weight: 400;
 }
 
-h2 {
+
+h2, li::marker, td {
     color: #854632;
-    font-size: 18px;
+}
+h2 {
+    font-size: 30px;
 }
 
 strong {
-    color: #5f574e;
     font-weight: 700;
 }
 
-p {
-    color: #E4DED8;
+li, p, th {
+    color: #5f574e;
 }
 
+img {
+    width: 100%;
+    border-radius: 15px;
+}
 
 #container {
     background-color: white;
-    padding: 16px;
+    padding: 40px;
     border-radius: 10px;
     width: 800px;
 }
@@ -47,19 +54,27 @@ p {
 }
 
 #preparation-title {
-    font-size: 16px;
+    font-size: 25px;
     color: #7b284f;
     font-weight: 700;
+    margin: 10px 0;
 }
 
+li {
+    padding: 5px 0;
+}
 
 li::marker {
-    color: #854632;
     font-weight: 600;
 }
 
-ul {
-    padding: 20px;
+ul, ol {
+    padding: 0 20px;
+}
+
+
+.section {
+    border-bottom: #e4ded8 solid 1px;
 }
 
 .attribution {
@@ -69,4 +84,24 @@ ul {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    text-align: left;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+td {
+    font-weight: 700;
+}
+tr {
+    height: 50px;
+}
+tr:not(:last-child) {
+    border-bottom: #e4ded8 solid 1px;
 }
